@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Guide | outdoorphotographer.com</title>
+  <script src="js/jquery.1.11.3.min.js"></script>
+  <script src="js/X-rayHTML.js"></script>
+  <script src="js/prism.js"></script>
+  <script type="text/javascript">
+    $( window ).bind( "create.xrayhtml", function( e ) {
+      var prism = !!~e.target.getAttribute( "class" ).indexOf( "prism" );
+      if( prism && "Prism" in window ) {
+        $( ".prism" ).find( "code" ).addClass( "language-markup" );
+        Prism.highlightAll();
+      }
+    });
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href="StyleSheet1.css" rel="stylesheet">
+  <!-- Styles in 'style.css' will override 'StyleSheet1.css' -->
+  <link href="style.css" rel="stylesheet">
+  <link href="prism.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="main-title">
+    <div class="container">
+      <strong>Outdoor Photographer</strong> <span class="heading">Style Guide</span>
+    </div>
+  </h1>
+
+  <div class="container main-container">
+
+    <h1>Typography</h1>
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <div class="sans-serif-light">Open Sans Light</div>       
+        <div class="sans-serif-light-italic">Open Sans Light Italic</div>   
+        <div class="sans-serif-regular">Open Sans</div>         
+        <div class="sans-serif-italic">Open Sans Italic</div>   
+        <div class="sans-serif-semibold">Open Sans Semibold</div>         
+        <div class="sans-serif-semibold-italic">Open Sans Semibold Italic</div>     
+        <div class="sans-serif-bold">Open Sans Bold</div>       
+        <div class="sans-serif-bold-italic">Open Sans Bold Italic</div>
+      </div>
+    </div><!-- .block -->
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <div class="serif-regular">Lora</div>         
+        <div class="serif-italic">Lora Italic</div>          
+        <div class="serif-bold">Lora Bold</div>       
+        <div class="serif-bold-oblique">Lora Bold Italic</div>
+      </div>
+    </div><!-- .block -->
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <h1>H1 Heading</h1>
+        <h2>H2 Heading</h2>
+        <h3>H3 Heading</h3>
+        <h4>H4 Heading</h4>
+        <h5>H5 Heading</h4>
+        <h6>H6 Heading</h4>
+      </div>
+    </div><!-- .block -->
+
+    <h1>Colors</h1>
+
+     <div class="color-block">
+       <div class="block">
+        <div data-xrayhtml class="prism">
+          <div style="background: #424445;" class="color-spot">Typography</div>
+          <div style="background: #000000;" class="color-spot">Heading</div>
+          <div style="background: #a0a2a3;" class="color-spot">Post Date, Author</div>
+          <div style="background: #75b189;" class="color-spot">Primary Button</div>
+          <div style="background: #f5f7f7; color: #424445;" class="color-spot">Template Background</div>
+        </div>
+      </div><!-- .block -->
+    </div>
+
+    <h1>Buttons</h1>
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <a class="btn btn-primary" href="#">Primary</a>
+        <a class="btn btn-secondary" href="#">Secondary</a>
+        <a class="btn btn-standout" href="#">Standout</a>
+      </div>
+    </div><!-- .block -->
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <a class="btn btn-sm btn-primary" href="#">Primary</a>
+        <a class="btn btn-sm btn-secondary" href="#">Secondary</a>
+        <a class="btn btn-sm btn-standout" href="#">Standout</a>
+      </div>
+    </div><!-- .block -->
+
+    <h1 class="bot-mar-10">Columns</h1>
+    <div class="bot-mar-40">
+      <div>Learn more here: <strong><a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></strong></div>
+      <div class="column-note"><em>NOTE: Column styles are for demonstration purposes only. Columns on the Outdoor Photographer site have no styling by default.</em></div>
+    </div>
+
+    <div class="block">
+      <div data-xrayhtml class="prism column-module">
+        <div class="row">
+          <div class="col-md-3">.col-md-3</div>
+          <div class="col-md-3">.col-md-3</div>
+          <div class="col-md-3">.col-md-3</div>
+          <div class="col-md-3">.col-md-3</div>
+        </div>        
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">.col-md-5</div>
+          <div class="col-md-7">.col-md-7</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-6">.col-md-6</div>
+        </div>
+      </div>
+    </div><!-- .block -->
+
+    <h1>Featured Styles</h1>
+
+    <div class="block">
+      <div data-xrayhtml class="prism">
+        <div class="feat-box">
+          <img src="img/mountains.jpg" alt="">
+          <div class="feat-box-content">
+            <h3>Think, Feel, Do </h3>
+            <div class="meta">
+              <span class="date">Monday, August 3, 2015</span> | <span class="byline">Posted By Outdoor Photographer</span>
+            </div>
+            <div class="deck">
+              Pros and Cons: How do the latest mirrorless cameras stack up to DSLRs? What are their strengths and weaknesses, and which one is best for you and your shooting style?
+            </div>
+            <div class="btn btn-primary">
+              Read More
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- .block -->
+
+  </div> <!-- .container -->
+
+</body>
+</html>

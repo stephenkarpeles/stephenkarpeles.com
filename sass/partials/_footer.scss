@@ -1,0 +1,15 @@
+.footer {	
+	padding: 10px 0; }
+
+.footer-main {
+	float: left;
+	width: 100%;
+	border-top: 1px solid black;
+	@include breakpoint(bp2) {
+		width: 80%; } }
+
+.top-link {
+	position: relative;
+	z-index: 100;
+	padding-top: 17px;
+	text-align: right; }

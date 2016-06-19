@@ -1,0 +1,37 @@
+// Responsive Breakpoints
+// More info here: http://ahrengot.com/web-development/sass-breakpoint-mixin/
+// And here: http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+
+$bp-tiny  : 19.5em;
+$bp1-alt  : 27em;
+$bp1  		: 30em;
+$bp2 			: 45em;
+$bp3 			: 60em;
+
+@mixin breakpoint($point, $value: 0) {
+	@if $point == bp-tiny {
+		@media (min-width: $bp-tiny) { @content; }
+	}
+
+	@else if $point == bp1-alt {
+		@media (min-width: $bp1-alt) { @content; }
+	}
+
+	@else if $point == bp1 {
+		@media (min-width: $bp1) { @content; }
+	}
+
+	@else if $point == bp2 {
+		@media (min-width: $bp2) { @content; }
+	}
+
+	@else if $point == bp3 {
+		@media (min-width: $bp3) { @content; }
+	}
+}
+
+@mixin between-breakpoints($min, $max) {
+	@media (min-width: $min) and (max-width: $max) {
+		@content;
+	}
+}

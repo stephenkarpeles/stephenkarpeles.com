@@ -1,0 +1,25 @@
+.wrapper {	
+	overflow: auto;
+	border-left: 5px solid $main-orange; }
+
+.container {
+	width: 88%;	
+	max-width: 1300px;
+	margin: 0 auto;
+	@include breakpoint(bp1-alt) {
+		width: 80%;	} }
+
+.main {
+	float: left;
+	width: 100%;
+	@include breakpoint(bp2) {
+		margin-right: 2%;
+		width: 78%; } }
+
+.aside {
+	float: left;
+	display: none;
+	text-align: right;
+	@include breakpoint(bp2) {		
+		display: block;
+		width: 20%; } }

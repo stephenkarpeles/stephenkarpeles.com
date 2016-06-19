@@ -1,0 +1,68 @@
+.header {
+	min-height: 110px;
+	@include breakpoint(bp1-alt) {
+		min-height: 115px; } }
+
+.logo {
+	float: left;
+	width: 80%;	
+	padding: 20px 0 22px;
+	font-size: 90%; 
+	@include breakpoint(bp1-alt) {
+		font-size: 100%; } }
+
+.title {
+	margin: 6px 0;
+	font-family: $sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 1; }
+
+.sub-title {
+	font-family: $serif;
+	line-height: 1.15;
+	font-style: italic;
+	font-size: 1.35em;
+	letter-spacing: -1px; }
+
+.mobile-nav-wrap {
+	position: relative;
+	float: right;
+	display: block;
+	width: 16%;
+	margin: 35px 0 0 0; 
+	@include breakpoint(bp1-alt) {
+		margin: 35px 0 0 0; }
+  @include breakpoint(bp2) {
+  	display: none; } }
+
+.mobile-nav-button {
+	float: right;
+  cursor: pointer;
+  background: url('../images/burger-orange-2.svg') no-repeat;
+  width: 30px;
+  height: 25px;
+  @include breakpoint(bp1-alt) {
+  	background: url('../images/burger-orange.svg') no-repeat;
+  	height: 30px;
+  	width: 36px; } }
+
+.mobile-nav { 
+  float: right;
+  clear: both; 
+  font-family: $sans-serif; 
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 70px 0 25px;  
+  @include breakpoint(bp-tiny) {
+  	margin: 35px 0 25px; }
+  @include breakpoint(bp1-alt) { 
+  	margin: 25px 0 30px; } }
+
+.mobile-nav-list {	
+	text-align: right;
+  margin: 0;
+  padding: 0;
+  li {
+  	padding: 3px 0;
+    list-style-type: none; } }

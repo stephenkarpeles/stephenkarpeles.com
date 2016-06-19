@@ -1,0 +1,44 @@
+$main-unit: 1em;
+
+.bot-mar-zero     { margin-bottom: 0; }
+.bot-mar-smallest { margin-bottom: $main-unit/4; }
+.bot-mar-smaller  { margin-bottom: $main-unit/3; }
+.bot-mar-small    { margin-bottom: $main-unit/2; }
+.bot-mar-base     { margin-bottom: $main-unit; }
+.bot-mar-base-alt { margin-bottom: $main-unit*1.5; }
+.bot-mar-large    { margin-bottom: $main-unit*2; }
+.bot-mar-larger   { margin-bottom: $main-unit*3; }
+.bot-mar-largest  { margin-bottom: $main-unit*4; }
+
+.bot-mar-alt      { margin-bottom: .75em; }
+
+.top-mar-zero     { margin-top: 0; }
+.top-mar-smallest { margin-top: $main-unit/4; }
+.top-mar-smaller  { margin-top: $main-unit/3; }
+.top-mar-small    { margin-top: $main-unit/2; }
+.top-mar-base     { margin-top: $main-unit; }
+.top-mar-base-alt { margin-top: $main-unit*1.5; }
+.top-mar-large    { margin-top: $main-unit*2; }
+.top-mar-larger   { margin-top: $main-unit*3; }
+.top-mar-largest  { margin-top: $main-unit*4; }
+
+.island-1 {	padding: .25em .5em .5em; }
+
+.vert-space-base     { height: $main-unit;   clear: both; }
+.vert-space-large    { height: $main-unit*2; clear: both; }
+.vert-space-larger   { height: $main-unit*2.5; clear: both; }
+.vert-space-largest  { height: $main-unit*3; clear: both; }
+.vert-space-massive  { height: $main-unit*3.5; clear: both; }
+.vert-space-huge     { height: $main-unit*4; clear: both; }
+
+.work-sample-spacer {
+	margin-bottom: $main-unit*2.5;
+	@include breakpoint(bp2) {
+		margin-bottom: $main-unit*1.75; } }
+
+.visually-hidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; }

@@ -1,0 +1,46 @@
+.body-link {
+  color: $main-orange;
+  &:hover {
+    border-bottom: 1px solid $main-orange; } }
+
+.headshot {
+  float: left;
+  margin: .75em 1em .75em 0;
+  background: url('../images/headshot-2-small.jpg') no-repeat;
+  height: 90px;
+  width: 90px; 
+  @include border-radius(50%);
+  @include box-shadow(rgba(black, 0.15) 0 1px 5px); 
+  @include breakpoint(bp1) {
+    margin: 1em 1.5em 1em 0;
+    background: url('../images/headshot-2.jpg') no-repeat;
+    height: 110px;
+    width: 110px; } }
+
+/* Demo Browser */
+
+.browser-window {
+  @include border-radius(4px);
+  @include box-shadow(rgba(black, 0.15) 0 2px 7px); }
+
+.chrome-bar-wrap {
+  background: #dedede;
+  @include border-radius(4px 4px 0 0); } 
+
+.browser-footer {
+  height: 10px;
+  background: #f3f3f3;
+  @include border-radius(0 0 4px 4px); }
+
+/* SVG */
+.no-svg .svg-chrome {
+  display: none; }
+
+.svg-chrome-alt { display: none; }
+
+.no-svg .svg-chrome-alt {
+  display: block; }
+
+/* Shadows */
+.box-shadow-1 {
+  @include box-shadow(rgba(black, 0.2) 0 2px 6px); }
